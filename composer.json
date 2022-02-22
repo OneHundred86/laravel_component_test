@@ -1,0 +1,28 @@
+{
+    "name": "oh86/test",
+    "description": "php laravel test",
+    "autoload": {
+        "psr-4": {
+            "Oh86\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "chenguangjun",
+            "email": "chen.gj@qq.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Oh86\\Test\\TestProvider"
+            ],
+            "aliases": {
+                "Test": "Oh86\\Test\\Facade\\Test"
+            }
+        }
+    }
+}
